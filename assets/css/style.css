@@ -10,15 +10,26 @@
     margin: 0; 
 }
 body{
-    background-color: var(--main)
+    background-color: var(--main);
+    
+}
+figure{
+    text-align: center;
 }
 
+figure .logo{
+    display:inline-block;
+    width: 100px;
+    height: 100px
+}
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
+   
 .options {
    list-style-type: none;
    text-align: center;
@@ -28,6 +39,21 @@ header {
     margin-left: 20px;
 }
 
+.links ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 50px;
+}
+
+.links ul li {
+    display:inline-block;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.links ul li:hover{
+transform: translateY(-15px);
+}
 header h1{
     color: var(--dark);
     text-decoration: none;
@@ -38,20 +64,138 @@ header h1{
 
 
 nav .options a{
+    font: montserrat;
+    font-size: 18px;
     color: var(--dark);
     text-decoration: none;
+    transition: 0.5s;
 }
 nav .options a:hover{
+    padding: 2px;
     border: 3px solid var(--dark);
-    font-size: larger;
     color: var(--accent);    
 }
 
-.img{
-    display: flex;
-    
+.typewriter{
+    text-align: center;
+   
 }
 
+
+.typewriter h1 {
+    display: inline;
+    font-family: Montserrat;
+    color: #0B0C11;
+    border-right: 8px solid var(--accent);
+    margin: 0 auto;
+    animation: blink-caret .8s step-end infinite;
+}
+
+.typewriter h1::after{
+    content: "👋";
+}
+
+.typewriter h1 .design{
+    color: var(--accent);
+}
+
+.typewriter h1 .create{
+color: var(--accent)
+}
+
+.typewriter h1 .develop{
+    color: var(--accent)
+}
+
+
+
+@keyframes blink-caret{
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: var(--accent)
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+  }
+  
+  body .container .card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+  }
+  
+  
+  
+  body .container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--dark);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  body .container .card .box:hover {
+    transform: translateY(-50px);
+  }
+  
+  body .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  body .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  body .container .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  
+  body .container .card .box .content h3 {
+    color: var(--main);
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+  
+ 
+  
+  
+  
 
 
 
