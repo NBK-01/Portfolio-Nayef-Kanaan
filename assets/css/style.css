@@ -1,0 +1,58 @@
+:root{
+ --main: #DABAAF;
+ --accent: #CF2F89;
+ --dark: #0B0C11;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+}
+body{
+    background-color: var(--main)
+}
+
+
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.options {
+   list-style-type: none;
+   text-align: center;
+}
+ .options li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header h1{
+    color: var(--dark);
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+
+
+nav .options a{
+    color: var(--dark);
+    text-decoration: none;
+}
+nav .options a:hover{
+    border: 3px solid var(--dark);
+    font-size: larger;
+    color: var(--accent);    
+}
+
+.img{
+    display: flex;
+    
+}
+
+
+
+
+
