@@ -10,7 +10,7 @@
     margin: 0; 
 }
 body{
-    background-color: var(--main);
+    background-color: #4C516D;
     
 }
 figure{
@@ -66,13 +66,13 @@ header h1{
 nav .options a{
     font: montserrat;
     font-size: 18px;
-    color: var(--dark);
+    color: white;
     text-decoration: none;
     transition: 0.5s;
 }
 nav .options a:hover{
     padding: 2px;
-    border: 3px solid var(--dark);
+    border: 3px solid white;
     color: var(--accent);    
 }
 
@@ -85,7 +85,7 @@ nav .options a:hover{
 .typewriter h1 {
     display: inline;
     font-family: Montserrat;
-    color: #0B0C11;
+    color: white;
     border-right: 8px solid var(--accent);
     margin: 0 auto;
     animation: blink-caret .8s step-end infinite;
@@ -95,17 +95,10 @@ nav .options a:hover{
     content: "👋";
 }
 
-.typewriter h1 .design{
+.typewriter h1 span{
     color: var(--accent);
 }
 
-.typewriter h1 .create{
-color: var(--accent)
-}
-
-.typewriter h1 .develop{
-    color: var(--accent)
-}
 
 
 
