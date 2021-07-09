@@ -4,6 +4,15 @@
  --dark: #0B0C11;
 }
 
+@font-face {
+    font-family: 'zen_tokyo_zooregular';
+    src: url('zentokyozoo-regular-webfont.woff2') format('woff2'),
+         url('zentokyozoo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -64,7 +73,7 @@ header h1{
 
 
 nav .options a{
-    font: montserrat;
+    font-family: zentokyozoo;
     font-size: 18px;
     color: white;
     text-decoration: none;
