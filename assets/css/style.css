@@ -1,14 +1,74 @@
 :root{
- --light: #DABAAF;
+ --light: black;
  --accent: #CF2F89;
- --dark: #0B0C11;
- --main: #4C516D
+ --main: #A89FA2;
+ --dark:#1d1c1d;
 }
 
 @font-face {
-    font-family: 'Tokyo';
-    src: url('zentokyozoo-regular-webfont.woff2') format('woff2'),
-         url('zentokyozoo-regular-webfont.woff') format('woff');
+    font-family: 'cairoblack';
+    src: url('cairo-black-webfont.woff2') format('woff2'),
+         url('cairo-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cairobold';
+    src: url('cairo-bold-webfont.woff2') format('woff2'),
+         url('cairo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cairoextralight';
+    src: url('cairo-extralight-webfont.woff2') format('woff2'),
+         url('cairo-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cairolight';
+    src: url('cairo-light-webfont.woff2') format('woff2'),
+         url('cairo-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cairoregular';
+    src: url('cairo-regular-webfont.woff2') format('woff2'),
+         url('cairo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cairosemibold';
+    src: url('cairo-semibold-webfont.woff2') format('woff2'),
+         url('cairo-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -20,7 +80,7 @@
     margin: 0; 
 }
 body{
-    background-color: var(--main) ;
+    background-color: var(--main);
     
 }
 figure{
@@ -35,7 +95,7 @@ figure .logo{
 
 header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'cairoregular';
     
 }
 
@@ -67,23 +127,23 @@ transform: translateY(-15px);
 header h1{
     color: var(--dark);
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
 }
 
 
 
 nav .options a{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: cairosemibold;
     font-size: 18px;
-    color: white;
+    color: var(--light);
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 nav .options a:hover{
     padding: 2px;
-    border: 3px solid white;
+    border: 9px solid var(--main);
     color: var(--accent);    
+    font-weight: bolder;
 }
 
 .typewriter{
@@ -94,9 +154,9 @@ nav .options a:hover{
 
 .typewriter h1 {
     display: inline;
-    font-family: Tokyo;
+    font-family: cairosemibold;
     letter-spacing: 2px;
-    color: white;
+    color: var(--dark);
     border-right: 8px solid var(--accent);
     margin: 0 auto;
     animation: blink-caret .8s step-end infinite;
@@ -108,6 +168,7 @@ nav .options a:hover{
 
 .typewriter h1 span{
     color: var(--accent);
+    font-family: cairoblack;
 }
 
 
@@ -153,12 +214,13 @@ nav .options a:hover{
     right: 20px;
     bottom: 20px;
     background-color: var(--dark);
-    border-radius: 15px;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     transition: 0.5s;
+    border: 2px solid var(--accent); 
   }
   
   body .container .card .box:hover {
@@ -190,7 +252,7 @@ nav .options a:hover{
   }
   
   body .container .card .box .content h3 {
-    color: var(--main);
+    color: var(--accent);
     z-index: 1;
     transition: 0.5s;
     margin-bottom: 15px;
